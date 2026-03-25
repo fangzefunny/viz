@@ -110,27 +110,27 @@ class viz:
 
     @staticmethod
     def violin(
-        ax,
-        data,
-        x,
-        y,
-        order,
-        palette,
-        orient="v",
-        hue=None,
-        hue_order=None,
-        shade_alpha=0.1,
-        scatter_size=7,
-        scatter_alpha=1,
-        scatter_lw=0,
-        scatter_edge_color="w",
-        scatter_type="swarm",
-        mean_marker_size=6,
-        error_capsize=0.11,
-        add_errs=True,
-        errorbar="se",
-        error_color=[0.3] * 3,
-        error_lw=2,
+        ax,                      # figure axis 
+        data,                    # dataframe
+        x,                       # x variable
+        y,                       # y variable
+        order,                   # order of the variables
+        palette,                 # palette for the plot
+        orient="v",              # orientation of the plot
+        hue=None,                # hue variable
+        hue_order=None,          # order of the hue variables
+        shade_alpha=0.1,         # alpha of the shade
+        scatter_size=7,          # size of the scatter points
+        scatter_alpha=1,         # alpha of the scatter points
+        scatter_lw=0,            # line width of the scatter points
+        scatter_edge_color="w",  # edge color of the scatter points
+        scatter_type="swarm",    # type of the scatter points
+        mean_marker_size=6,      # size of the mean marker
+        error_capsize=0.11,      # cap size of the error bars
+        add_errs=True,           # whether to add error bars
+        errorbar=("ci", 95),     # type of error bars
+        error_color=[0.3] * 3,   # color of the error bars
+        error_lw=2,              # line width of the error bars
     ):
         g_var = y if orient == "h" else x
         v_var = x if orient == "h" else y
@@ -226,23 +226,23 @@ class viz:
 
     @staticmethod
     def violin_with_tar(
-        ax,
-        data,
-        color,
-        x,
-        y,
-        order,
-        orient="v",
-        hue=None,
-        hue_order=None,
-        shade_alpha=0.4,
-        scatter_size=4,
-        scatter_alpha=1,
-        mean_marker_size=6,
-        error_capsize=0.14,
-        errorbar="se",
-        error_lw=3,
-        error_color=[0.5] * 3,
+        ax,                      # figure axis 
+        data,                    # dataframe
+        x,                       # x variable
+        y,                       # y variable
+        color,                   # color of the plot
+        order,                   # order of the variables
+        orient="v",              # orientation of the plot
+        hue=None,                # hue variable
+        hue_order=None,          # order of the hue variables
+        shade_alpha=0.4,         # alpha of the shade
+        scatter_size=4,          # size of the scatter points
+        scatter_alpha=1,         # alpha of the scatter points
+        mean_marker_size=6,      # size of the mean marker
+        error_capsize=0.14,      # cap size of the error bars
+        errorbar=("ci", 95),     # type of error bars
+        error_lw=3,              # line width of the error bars
+        error_color=[0.5] * 3,   # color of the error bars
     ):
         g_var = y if orient == "h" else x
         sns.violinplot(
