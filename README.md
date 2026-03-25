@@ -6,13 +6,13 @@ The visualization methods I preferred
 ### Regular install
 
 ```bash
-pip install "git+https://github.com/<you>/<repo>.git"
+pip install "git+https://github.com/fangzefunny/viz.git"
 ```
 
 ### Editable install (recommended for personal tweaks)
 
 ```bash
-pip install -e "git+https://github.com/<you>/<repo>.git#egg=zeming-viz"
+pip install -e "git+https://github.com/fangzefunny/viz.git#egg=zeming-viz"
 ```
 
 ## Usage
