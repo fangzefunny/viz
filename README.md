@@ -15,6 +15,12 @@ pip install "git+https://github.com/fangzefunny/viz.git"
 pip install -e "git+https://github.com/fangzefunny/viz.git#egg=zeming-viz"
 ```
 
+### Upgrade the package
+
+```bash
+pip install --upgrade "git+https://github.com/fangzefunny/viz.git"
+```
+
 ## Usage
 
 ```python
