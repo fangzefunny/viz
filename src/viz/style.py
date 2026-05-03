@@ -120,7 +120,7 @@ class viz:
         orient="v",
         hue=None,
         hue_order=None,
-        shade_alpha=0.1,
+        shade_alpha=0.4,
         scatter_size=7,
         scatter_alpha=1,
         scatter_lw=0,
