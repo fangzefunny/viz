@@ -83,6 +83,7 @@ class viz:
     RedsMap = matplotlib.colors.LinearSegmentedColormap.from_list("vizReds", [lRed, dRed])
     YellowsMap = matplotlib.colors.LinearSegmentedColormap.from_list("vizYellows", [lYellow, orange])
     GreensMap = matplotlib.colors.LinearSegmentedColormap.from_list("vizGreens", [lGreen, Green])
+    BlueRedMap = matplotlib.colors.LinearSegmentedColormap.from_list('cool_warm',   [new_blue, np.array([.99]*3), new_red])
 
     @staticmethod
     def get_style():
