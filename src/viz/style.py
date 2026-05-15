@@ -243,7 +243,7 @@ class viz:
         mean_marker_size=6,      # size of the mean marker
         error_capsize=0.14,      # cap size of the error bars
         errorbar=("ci", 95),     # type of error bars
-        error_lw=3,              # line width of the error bars
+        error_lw=2,              # line width of the error bars
         error_color=[0.5] * 3,   # color of the error bars
     ):
         g_var = y if orient == "h" else x
@@ -302,7 +302,7 @@ class viz:
             markeredgewidth=error_lw,
             markersize=mean_marker_size,
             capsize=error_capsize,
-            err_kws={"linewidth": error_lw},
+            err_kws={"linewidth": error_lw, "solid_capstyle": "projecting"},
             ax=ax,
         )
 
